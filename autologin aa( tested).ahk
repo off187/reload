@@ -375,7 +375,7 @@ If ErrorLevel
 		Return
 }
 Sleep, 100
-goto, dos8
+goto, dos
 Return
 
 dos8:
