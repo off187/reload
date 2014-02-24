@@ -108,11 +108,15 @@ WinActivate, Игровой центр@Mail.Ru ahk_class MailRuLoader.TMainForm1
 Sleep, 100
 IfWinActive, Игровой центр@Mail.Ru ahk_class MailRuLoader.TMainForm1
 Sleep, 100
-Send, {Enter}
+WinActivate, Войти в игру не удалось ahk_class GameCenterMailRu.TOkForm
 Sleep, 100
 Send, {Enter}
 Sleep, 100
+WinActivate, Ошибка авторизации ahk_class GameCenterMailRu.TOkForm
+Sleep, 100
 Send, {Enter}
+Sleep, 100
+WinActivate, Игровой центр@Mail.Ru ahk_class MailRuLoader.TMainForm1
 Sleep, 100
 Click, 819, 143 Left, Down    ; координаты кнопки играть
 Sleep, 94
