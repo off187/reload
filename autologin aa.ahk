@@ -1,4 +1,4 @@
-﻿#NoEnv
+#NoEnv
 SetWorkingDir %A_ScriptDir%
 CoordMode, Mouse, Window
 SendMode Input
@@ -50,7 +50,7 @@ return
 699:
 Sleep, 500
 CoordMode, Pixel, Window
-PixelSearch, FoundX, FoundY, 15, 33, 40, 54, 0x8B6025, 0, Fast RGB ; координаты пикселя и его цвета в окне окне игры(когда уже зашел на сервер)
+PixelSearch, FoundX, FoundY, 15, 33, 40, 54, 0x8B6025, 0, Fast RGB ; координаты пикселя и его цвета в окне окне игры(когда уже зашел на сервер)выключено
 If ErrorLevel
 {
 	goto, 5
@@ -227,7 +227,7 @@ CoordMode, Pixel, Window
 PixelSearch, FoundX, FoundY, 1081, 523, 1120, 551, 0xC2BFAB, 0, Fast RGB ; координаты пикселя и его цвета в окне очереди
 If ErrorLevel
 {
-	goto, dos                           ; нужно доделать
+	goto, dos                           ; 
 		Return
 }
 Sleep, 100
@@ -259,10 +259,10 @@ return
 dos2:
 Sleep, 500
 CoordMode, Pixel, Window
-PixelSearch, FoundX, FoundY, 233, 485, 280, 523, 0x400500, 0, Fast RGB ; координаты пикселя и его цвета в окне персонажа
+PixelSearch, FoundX, FoundY, 233, 485, 280, 523, 0x400500, 0, Fast RGB ; координаты пикселя и его цвета в окне выбора персонажа
 If ErrorLevel
 {
-	goto, 5                           ; нужно доделать
+	goto, 5                           ;
 		Return
 }
 Sleep, 100
